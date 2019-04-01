@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "215427616355",
+    "firebase_url": "https://mary-immaculate-girls-borivli.firebaseio.com",
+    "project_id": "mary-immaculate-girls-borivli",
+    "storage_bucket": "mary-immaculate-girls-borivli.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215427616355:android:77232fb48896d9d6",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.maryimmaculateborivli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215427616355-m25gj6t74fhukbg47jvq3pidod32vfqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3IzhcwdLMznGEcoW9R06G5724HqTXVKg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

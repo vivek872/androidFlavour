@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "232761956372",
+    "firebase_url": "https://divine-child-hs-andheri.firebaseio.com",
+    "project_id": "divine-child-hs-andheri",
+    "storage_bucket": "divine-child-hs-andheri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232761956372:android:d01aa14ea06b1c1f",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.divinechild"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232761956372-nk3mgktv20tbhoo2a037o1pf5p1uaobi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJfZ41QAWbZEg7qsXx5f_dQr575K4BmN8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

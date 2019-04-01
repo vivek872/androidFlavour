@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/nav_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/nav_title"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/nav_item"
+        android:paddingLeft="7dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_nav_home"
+        android:drawableLeft="@drawable/ic_nav_home"/>
+
+</LinearLayout>

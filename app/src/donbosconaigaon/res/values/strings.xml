@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Don Bosco High School &amp; Jr. College</string>
+    <string name="news">News</string>
+    <string name="events">Events</string>
+    <string name="register">Register</string>
+    <string name="school_website">School Website</string>
+    <string name="contact_us">Contact us</string>
+    <string name="about_us">About us</string>
+    <string name="principal_s_message">PRINCIPAL\'S MESSAGE</string>
+    <string name="nav_item">Nav Item</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="events_note">Events not available at this moment, please pull down to refresh or try again later.</string>
+    <string name="header_layout">Header Layout</string>
+    <string name="month">Month</string>
+    <string name="event_details">Event Details</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="day">Day</string>
+    <string name="downloads">Downloads</string>
+    <string name="all_day">All Day</string>
+    <string name="news_nda">News</string>
+    <string name="more_news">More News</string>
+    <string name="data">Data</string>
+    <string name="swipe_down_to_refresh">Swipe down to refresh</string>
+    <string name="tap_to_dismiss">Tap to dismiss</string>
+    <string name="no_internet">No internet Connection</string>
+    <string name="news_title">News Title</string>
+    <string name="news_details">News Details</string>
+    <string name="action_settings">Action Setting</string>
+<string name="facilities">FACILITIES</string>
+</resources>

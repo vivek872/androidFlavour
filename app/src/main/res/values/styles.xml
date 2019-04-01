@@ -1,20 +1,85 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="ButtonTheme" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:background">@drawable/ripple_effect</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:translationZ">2dp</item>
+        <item name="android:stateListAnimator">@null</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!-- Fullscreen application theme. -->
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- ToolBar Theme -->
+    <style name="ToolBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <!-- Home Content Theme -->
+    <style name="HomeIconsTop">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.25</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="HomeTextTop">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1.75</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="HomeIconsBottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="HomeTextBottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Home Content Theme Ends -->
+
+    <style name="DividerVertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="DividerHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
 
 </resources>

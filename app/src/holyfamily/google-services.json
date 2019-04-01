@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "882298324302",
+    "firebase_url": "https://holy-family-andheri.firebaseio.com",
+    "project_id": "holy-family-andheri",
+    "storage_bucket": "holy-family-andheri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882298324302:android:041b77f321e56e1c",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.holyfamily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882298324302-csvi84jafpi20qgqdpn9rs61rrh8rdtg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZGk2oSM_YKjFKl1qg4obGW16XceH9BSY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

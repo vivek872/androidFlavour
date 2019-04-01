@@ -6,9 +6,10 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
+
     defaultConfig {
         applicationId "intellinectsschool.intellinects.com.v4flavors"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -20,15 +21,156 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions 'v4flavors'
+    productFlavors {
+        divinechild {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.divinechild'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+            flavorDimensions "v4flavors"
+        }
+        carmelNandkhal {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.carmelNandkhal'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+        basca {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.basca'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+        canossamahim {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.canossamahim'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+        cardinalgracias {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.cardinalgracias'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+        divinechildcbse {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.divinechildcbse'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+        holyfamily {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.holyfamily'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+        holynamehighschool {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.holynamehighschool'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+        maryimmaculateborivli {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.maryimmaculateborivli'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+        MountCarmelPuneMain {
+            minSdkVersion 21
+            applicationId 'com.MountCarmelPune.MountCarmelPune.MountCarmelPuneMain'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 1
+            versionName '1.0'
+        }
+
+        donbosconaigaon {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.donbosconaigaon'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 23
+            versionName '10.3'
+            flavorDimensions "v4flavors"
+        }
+
+        stxaviershimmatnagar {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.stxaviershimmatnagar'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 22
+            versionName '10.2'
+            flavorDimensions "v4flavors"
+        }
+
+        stmarysmapusa {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.stmarysmapusa'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 22
+            versionName '10.2'
+            flavorDimensions "v4flavors"
+        }
+
+        stjosephkhanusa {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.stjosephkhanusa'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 23
+            versionName '10.3'
+            flavorDimensions "v4flavors"
+        }
+
+        olhssahar {
+            minSdkVersion 21
+            applicationId 'com.intellinects.intellinectsschool.olhssahar'
+            targetSdkVersion 28
+            testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+            versionCode 22
+            versionName '10.2'
+            flavorDimensions "v4flavors"
+        }
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.android.support:design:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //GSON LIBRARY DECLARATION
+    implementation 'com.google.code.gson:gson:2.8.2'
+    //NETWORK LIBRARY DECLARATION
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.squareup.moshi:moshi-kotlin:1.5.0'
+    implementation 'com.agrawalsuneet.androidlibs:loaderspack:1.2.2'
 }

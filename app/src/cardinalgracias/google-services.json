@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "486334801414",
+    "firebase_url": "https://cardinal-gracias-hs-bandra.firebaseio.com",
+    "project_id": "cardinal-gracias-hs-bandra",
+    "storage_bucket": "cardinal-gracias-hs-bandra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486334801414:android:e8d46e26b3233ab6",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.cardinalgracias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486334801414-gmtkk7rss84rp5llf1eimrmmi8f3gr53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVLKpmNKf4AYv5KaHN6vv2iVzWn7I_JY4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "291206633391",
+    "firebase_url": "https://olhs-sahar.firebaseio.com",
+    "project_id": "olhs-sahar",
+    "storage_bucket": "olhs-sahar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291206633391:android:530c41441d220f94",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.olhssahar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291206633391-80s495frgbngfl512vm60rtgbip34n61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABj8qt8CU5IVyziieBf9S3er3W9hEOyJM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

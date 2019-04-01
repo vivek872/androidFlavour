@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="contentDescription, UseCompoundDrawables">
+
+    <include
+        android:id="@+id/news_header"
+        layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/news_header">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/news_swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_news_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </android.support.v7.widget.RecyclerView>
+
+                <include
+                    layout="@layout/nda_layout"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_swipe_down"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="EndFragment"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/swipe_down_fragment"
+            android:name="intellinectsschool.intellinects.com.v4flavors.Fragments.SwipeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <com.agrawalsuneet.loaderspack.loaders.CircularSticksLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/material_loader"
+        android:visibility="gone"
+        app:circularsticks_animDuration="30"
+        app:circularsticks_firstShadowColor="@color/colorAccent"
+        app:circularsticks_innerCircleRadius="50dp"
+        app:circularsticks_noOfSticks="20"
+        android:layout_centerInParent="true"
+        app:circularsticks_outerCircleRadius="80dp"
+        app:circularsticks_secondShadowColor="@color/colorAccent"
+        app:circularsticks_selectedStickColor="@color/colorAccent"
+        app:circularsticks_showRunningShadow="true"
+        app:circularsticks_stickColor="#33777777"
+        app:circularsticks_viewBackgroundColor="@color/white" />
+
+</RelativeLayout>

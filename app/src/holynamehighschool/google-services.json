@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1084805546719",
+    "firebase_url": "https://holy-name-hs-colaba.firebaseio.com",
+    "project_id": "holy-name-hs-colaba",
+    "storage_bucket": "holy-name-hs-colaba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084805546719:android:2d3d17a018911684",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.holynamehighschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084805546719-4lugbkbdcldrg5hmquj9ao1met4j94od.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbT2Dwsb40wajjWZ3SogLdYuOZYXIuAXA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

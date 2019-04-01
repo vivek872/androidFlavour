@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "360892289334",
+    "firebase_url": "https://ace-tine-700.firebaseio.com",
+    "project_id": "ace-tine-700",
+    "storage_bucket": "ace-tine-700.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360892289334:android:003fd05e27c80ddc",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.carmelNandkhal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360892289334-dtfadm8s60ubrr29uph9kqr64vmb1339.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQMVCeNSJo4y775nhhu-oh802UUPTfkec"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

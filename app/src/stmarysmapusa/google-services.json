@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1037097207173",
+    "firebase_url": "https://st-mary-mapusa.firebaseio.com",
+    "project_id": "st-mary-mapusa",
+    "storage_bucket": "st-mary-mapusa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037097207173:android:0a433115b62b1875",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.stmarysmapusa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037097207173-49d6mv302b59j7evmn0qvvtn93t5fnnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaOO1yzAyLzqR6q1cCb8w66GFL5t1Xqf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

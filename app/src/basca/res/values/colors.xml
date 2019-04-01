@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d4a6d</color>
+    <color name="colorPrimaryDark">#1d4a6d</color>
+    <color name="colorAccent">#1d4a6d</color>
+    <color name="status">#1d4a6d</color>
+
+    <!--<color name="colorPrimary">#000</color>-->
+    <!--<color name="colorPrimaryDark">#000</color>-->
+    <!--<color name="colorAccent">#000</color>-->
+
+    <color name="background">#F0F0F0</color>
+    <color name="header_color">#c4dcf2</color>
+    <color name="black">#000</color>
+    <color name="white">#FFF</color>
+    <color name="gray">#F0F0F0</color>
+    <color name="event_item_background_center">#FFF</color>
+    <color name="event_item_background_start">#FFF</color>
+    <color name="event_title_background_start">#CDCDCD</color>
+    <color name="event_title_background_center">#E6E6E6</color>
+    <color name="event_title_background_end">#CDCDCD</color>
+    <color name="light_grey">#F0F0F0</color>
+    <color name="login_button_color">#0A29D8</color>
+    <color name="spinner_popup">#F2F2F2</color>
+    <color name="button_background_start">#E1E3E5</color>
+    <color name="button_background_center">#D4D6D9</color>
+    <color name="button_background_end">#CCCED0</color>
+    <color name="dark_gray">#3A3A3A</color>
+    <color name="actionbar_background_start">#464646</color>
+    <color name="actionbar_background_center">#474747</color>
+    <color name="actionbar_background_end">#494949</color>
+    <color name="cell_border_color">#F2F2F2</color>
+    <color name="gray_header">#CCCCCC</color>
+    <color name="weekly_off">#80ff80</color>
+    <color name="sick_leave">#d3d3d3</color>
+    <color name="half_day">#ffdae0</color>
+    <color name="extrcurricular">#add8a6</color>
+    <color name="other">#fff8a6</color>
+    <color name="absent">#ff0000</color>
+    <color name="present">#ffffff</color>
+
+    <color name="menu_item_color_blue">#28ACD9</color>
+    <color name="app_background_color">#F5F5F5</color>
+    <color name="divider">#757575</color>
+
+
+</resources>

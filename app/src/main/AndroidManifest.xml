@@ -2,17 +2,51 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="intellinectsschool.intellinects.com.v4flavors">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".Fcm.IntellinectsApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".Activities.HomeActivity"
+                  android:screenOrientation="portrait"
+        />
+
+        <activity android:name=".Activities.EventsActivity"
+                  android:screenOrientation="portrait"
+        />
+
+        <activity android:name=".Activities.EventDetailsActivity"
+                  android:screenOrientation="portrait"
+
+        />
+
+
+        <activity android:name=".Activities.NewsActivity"
+                  android:screenOrientation="portrait"
+
+        />
+
+
+        <activity android:name=".Activities.NewsDetailsActivity"
+                  android:screenOrientation="portrait"
+
+        />
+
+        <activity android:name=".Activities.WebViewActivity"
+                  android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".Activities.SplashActivity"
+                  android:theme="@style/FullscreenTheme"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

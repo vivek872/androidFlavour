@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "989871097085",
+    "firebase_url": "https://st-sebastian-dabul.firebaseio.com",
+    "project_id": "st-sebastian-dabul",
+    "storage_bucket": "st-sebastian-dabul.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989871097085:android:bb06ef0aca79aad6",
+        "android_client_info": {
+          "package_name": "com.MountCarmelPune.MountCarmelPune.MountCarmelPuneMain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989871097085-e0plsbp37fp3kuescouiogokgcgmntr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVWXZyWDgqml0bnRywHFpRmdop5Aocre8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

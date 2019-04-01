@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_list_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/white"
+    tools:ignore="RtlHardcoded, ContentDescription, UselessParent">
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:id="@+id/day_date_layout"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:id="@+id/event_date"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/day"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/event_day"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <View android:id="@+id/divider"
+        style="@style/DividerVertical"
+        android:layout_toRightOf="@+id/day_date_layout"
+        android:layout_toEndOf="@+id/day_date_layout"/>
+
+    <LinearLayout
+        android:layout_width="32dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="-12dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/day_date_layout"
+        android:layout_toEndOf="@+id/day_date_layout"
+        android:id="@+id/arrow_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/logo2"
+            android:id="@+id/arrow"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/arrow_layout"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.68"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:lines="2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/event_date_bg_left"
+                android:gravity="center_vertical|left"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/event_time"
+                android:layout_width="0dp"
+                android:lines="2"
+                android:layout_height="match_parent"
+                android:layout_weight="0.32"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/event_date_bg_right"
+                android:gravity="center"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

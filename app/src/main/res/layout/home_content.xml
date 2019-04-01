@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    tools:ignore="DuplicateIds, UselessParent, ContentDescription, NestedWeights, UseCompoundDrawables">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:onClick="LaunchHomeIntent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_news"
+                style="@style/HomeIconsTop"
+                android:src="@drawable/ic_news"
+                android:tint="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/home_tv"
+                style="@style/HomeTextTop"
+                android:text="@string/news" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerHorizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:onClick="LaunchHomeIntent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_events"
+                style="@style/HomeIconsTop"
+                android:src="@drawable/ic_events"
+                android:tint="@color/colorPrimaryDark"/>
+
+
+            <TextView
+                android:id="@+id/home_tv"
+                style="@style/HomeTextTop"
+                android:text="@string/events"/>
+
+        </LinearLayout>
+
+        <View style="@style/DividerHorizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/init_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                >
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_dyn_login"
+                    style="@style/HomeIconsTop"
+                    android:src="@drawable/ic_login"
+                    android:tint="@color/colorPrimaryDark"/>
+
+
+                <TextView
+                    android:id="@+id/tv_dyn_login"
+                    style="@style/HomeTextTop"
+                    android:text="@string/register"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/final_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_select_child_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   >
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/DividerHorizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:onClick="LaunchWebView">
+
+            <LinearLayout
+                android:id="@+id/home_wv_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:weightSum="2.5">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/facilities"
+                    style="@style/HomeIconsBottom"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/facility" />
+
+                <TextView
+                    android:id="@+id/home_wv"
+                    style="@style/HomeTextBottom"
+                    android:text="@string/facilities"/>
+
+            </LinearLayout>
+
+
+            <View style="@style/DividerVertical"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2.5"
+                android:padding="3dp"
+                android:onClick="LaunchWebView">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_youtube"
+                    style="@style/HomeIconsBottom"
+                    android:src="@drawable/ic_messages"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/home_wv"
+                    style="@style/HomeTextBottom"
+                    android:text="@string/principal_s_message"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerVertical"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2.5"
+                android:padding="5dp"
+                android:onClick="LaunchWebView">
+
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_teachers"
+                    style="@style/HomeIconsBottom"
+                    android:src="@drawable/teach"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/home_wv"
+                    style="@style/HomeTextBottom"
+                    android:text="TEACHERS"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerVertical"/>
+
+        </LinearLayout>
+
+        <View style="@style/DividerHorizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2.5"
+                android:padding="5dp"
+                android:onClick="LaunchWebView">
+
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_contact_us"
+                    style="@style/HomeIconsBottom"
+                    android:src="@drawable/ic_contact_us"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/home_wv"
+                    style="@style/HomeTextBottom"
+                    android:text="@string/contact_us"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerVertical"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:weightSum="2.5"
+                android:onClick="LaunchWebView">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_about_us"
+                    style="@style/HomeIconsBottom"
+                    android:src="@drawable/ic_about_us"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/home_wv"
+                    style="@style/HomeTextBottom"
+                    android:text="@string/about_us"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerVertical"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2.5"
+                android:padding="3dp"
+                android:onClick="LaunchWebView">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_website"
+                    style="@style/HomeIconsBottom"
+                    android:src="@drawable/ic_website"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/home_wv"
+                    style="@style/HomeTextBottom"
+                    android:text="@string/school_website"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerVertical"/>
+
+        </LinearLayout>
+
+        <View style="@style/DividerHorizontal"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2.5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:onClick="LaunchWebView">
+
+                <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_contact_us"
+                        style="@style/HomeIconsBottom"
+                        android:src="@drawable/ic_lms"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                        android:id="@+id/home_wv"
+                        style="@style/HomeTextBottom"
+                        android:text="LMS"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerVertical"/>
+
+            <LinearLayout
+                    android:id="@+id/layout_learning"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:weightSum="2.5"
+                    android:gravity="center"
+                    android:onClick="LaunchWebView">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_about_us"
+                        style="@style/HomeIconsBottom"
+                        android:src="@drawable/ic_learning"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                        android:id="@+id/home_wv"
+                        style="@style/HomeTextBottom"
+                        android:text="LEARNING"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerVertical"/>
+
+            <LinearLayout
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2.5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:onClick="LaunchWebView">
+
+
+                <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/iv_website"
+                        style="@style/HomeIconsBottom"
+                        android:src="@drawable/ic_roll_of_honor"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                        android:id="@+id/home_wv"
+                        style="@style/HomeTextBottom"
+                        android:text="NULL"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerVertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

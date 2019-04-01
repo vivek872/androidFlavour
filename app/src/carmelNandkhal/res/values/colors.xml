@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="headerText">#754c78</color>-->
+    <color name="headerText">#680609</color>
+    <color name="statusbar">#590508</color>
+
+    <color name="actionbar_background_start">#464646</color>
+    <color name="actionbar_background_center">#474747</color>
+    <color name="actionbar_background_end">#494949</color>
+    <color name="app_background_color">#CFECEC</color>
+    <color name="background">#486BAB</color>
+    <color name="new_splash_background">#D8D8D8</color>
+    <color name="button_background_start">#E1E3E5</color>
+    <color name="button_background_center">#D4D6D9</color>
+    <color name="button_background_end">#CCCED0</color>
+    <color name="dark_gray">#3A3A3A</color>
+    <color name ="dark_blue">#452A50</color>
+    <color name ="green">#0F8E22</color>
+    <color name="white">#FFFFFFFF</color>
+     <color name="bg">#eff2f7</color>
+    <color name="gray">#efefef</color>
+    <color name="red">#DF352F</color>
+    <color name="black">#FF000000</color>
+
+    <color name="yellow">#FFFF00</color>
+     <color name="color_dashboard_subjects">#7fc1d8</color>
+     <color name="color_dashboard_sub_label">#1a5d75</color>
+     <color name="color_dashboard_sub_label2">#600097</color>
+     <color name="color_dashboard_sub_label3">#004309</color>
+     <color name="color_dashboard_sub_label4">#004309</color>
+     <color name="color_dashboard_sub_label5">#920500</color>
+     <color name="color_dashboard_sub_label6">#783000</color>
+     <color name="color_dashboard_sub_label7">#37004d</color>
+     
+     <color name="color_dashboard_subjects2">#c27aeb</color>
+     <color name="color_dashboard_subjects3">#6f9d75</color>
+     <color name="color_dashboard_subjects4">#db8683</color>
+     <color name="color_dashboard_subjects5">#dba079</color>
+     <color name="color_dashboard_subjects6">#846b8e</color>
+    <color name="header_text_color">#FFFFFF</color>
+    <color name="new_header_text_color">#000000</color>
+    <color name="darkblue">#1d4a6d</color>
+    <color name="edittext_default">#E1E1E1</color>
+    <color name="edittext_focused">#244ec3</color>
+    <color name="light_violet">#A4AFF2</color>
+    
+    <!--     For Quiz item -->
+    
+    <color name="subject_marathi">#088A08</color>
+    <color name="subject_geography">#B45F04</color>
+    <color name="subject_algebra">#2ECCFA</color>
+    <color name="subject_geometry">#FF00FF</color>
+    <color name="subject_physics">#FF8000</color>
+    <color name="subject_bilogy">#0B610B</color>
+    <color name="question_background">#735D72</color>
+    <color name="dashboard_background">#846b8e</color>
+    <color name="grades_background">#EAE7EF</color>
+    <color name="result_background">#917a9a</color>
+    <color name="options_label">#6B3A07</color>
+    <color name="color_for_next_button">#D8D8D8</color>
+    <color name="color_for_tab">#452A50</color>
+    <drawable name="transperent_color">@null</drawable>    
+    
+    <!-- <color name="background_start">#6E6E6E</color>
+    <color name="background_center">#3E3E3E</color>
+    <color name="background_end">#000000</color>  -->
+    <color name="background_start">#408DCC</color>
+    <color name="background_center">#1d4a6d</color>
+    <color name="background_end">#0F2337</color>
+    <color name="header_background">#ffffff</color>
+    <color name="splash_background">#F2F2F2</color>
+    <color name="splash_background_footer">#F7F7F7</color>
+  
+    <color name="header_background_login">#FFFF00</color>
+    <color name="button_background">#783C2A</color>
+    <color name="text_color">#4B3264</color><!-- Used in settings section -->
+    <color name="light_grey">#E9E7EE</color>
+    <color name="events_date_header_color">@android:color/white</color>
+    <color name="header_background_for_login">#FFFFFF</color>
+    <color name="event_item_background_start">#FFFFFF</color>
+    <color name="event_item_background_center">#FFFFFF</color>
+    <color name="event_item_background_end">#FFFFFF</color>
+    
+    <color name="event_list_item_background_start">#FAFCFE</color>
+    <color name="event_list_item_background_center">#F1F9FB</color>
+    <color name="event_list_item_background_end">#3181BC</color>
+    
+    <color name="event_title_background_start">#CDCDCD</color>
+    <color name="event_title_background_center">#E6E6E6</color>
+    <color name="event_title_background_end">#CDCDCD</color>
+    
+    <color name="event_date_background_start">#3d3369</color>
+    <color name="event_date_background_center">#3d3369</color>
+    <color name="event_date_background_end">#3d3369</color>
+    
+      <color name="puzzle_background">#ffe6f0ff</color>
+   <color name="puzzle_hilite">#ffffffff</color>
+   <color name="puzzle_light">#64c6d4ef</color>
+   <color name="puzzle_dark">#6456648f</color>
+   <color name="puzzle_foreground">#ff000000</color>
+   <color name="puzzle_hint_0">#64ff0000</color>
+   <color name="puzzle_hint_1">#6400ff80</color>
+   <color name="puzzle_hint_2">#2000ff80</color>
+   
+   <color name="puzzle_selected">#64ff8000</color>
+   
+   <color name="chat_background">#8ea4b6</color>
+   
+   <!--     For chat item -->
+	<color name="chat_sender_text">#F01414</color>
+	<color name="chat_msg_text">#35227B</color>
+	<color name="chat_time_text">#0D653B</color>
+	<!-- New menu colors -->
+	<color name="menu_item_color_violet">#452A50</color>
+	<color name="menu_item_color_orange">#DE691B</color>
+	<color name="menu_item_color_red">#DF352F</color>
+	<color name="menu_item_color_blue">#28ACD9</color>
+	<color name="menu_item_color_dark_green">#086314</color>
+	<color name="menu_item_color_purple">#AD1DFF</color>
+	
+	<color name="login_edit_text_back_color">#E5E7E9</color>
+	<color name="brown">#AE6F34</color>
+	<color name="register_button_color">#5aabd6</color>
+	<color name="android_lollipop_top_bar_color">#332b58</color>
+	<color name="charcha_tab_selected">#D49D2A</color>
+	<color name="charcha_tab_separator">#D59D30</color>
+	<color name="login_page_color_grey">#EBEBEB</color>
+	<color name="login_page_color_orange">#D39D2D</color>
+	<color name="login_button_color">#0a29d8</color>
+	<color name="login_page_color_blue">#0a29d8</color>
+	<color name="home_app_background_color">#FEFEFE</color>
+	<!-- Added by Mayuri -->
+	
+	<color name="spinner_popup">#f2f2f2</color>
+	<color name="table_left_cells">#dadaff</color>
+	<color name="header_color">#cdc1c5</color>
+	<color name="header_text">#1f0755</color>
+	<color name="left_col_color">#e8e3e5</color>
+
+	<color name="calender_tc_active">#e8e3e5</color>
+	<color name="calender_bg_inactive">#000000</color>
+	<color name="calender_bg_active">#455566</color>
+	<color name="calender_tc_inactive">#ffffff</color>
+	<color name="calender_tc_active_actived">#ffffff</color>
+	<color name="calender_tc_active_active">#009990</color>
+	<color name="calender_tc_bg">#ff00ff</color>
+	
+	<color name="bg_break_cell">#ccccff</color>
+	<color name="cell_border_color">#f2f2f2</color>
+	<color name="gray_header">#CCCCCC</color>
+	
+	<!--   event  colors   -->
+	<color name="first">#0bc1f0</color>
+	<color name="second">#8a638f</color>
+	<color name="third">#ffa200</color>
+	
+	<!-- Category color -->
+	<color name="cfirst">#322435</color>
+	<color name="csecond">#023a47</color>
+	<color name="cthird">#4c3000</color>
+
+    <!-- Legend colors -->
+    <color name="attendance_header">#754c78</color>
+
+    <color name="weekly_off">#80ff80</color>
+    <color name="sick_leave">#d3d3d3</color>
+    <color name="half_day">#ffdae0</color>
+    <color name="extrcurricular">#add8a6</color>
+    <color name="other">#fff8a6</color>
+    <color name="absent">#ff0000</color>
+    <color name="present">#ffffff</color>
+
+
+    <!--quiz module-->
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_light_blue">#27d9f1</color>
+    <color name="gray1">#eceaea</color>
+    <color name="light_blue">#f9d89b</color>
+    <color name="fragment_profile">#f7de92</color>
+    <color name="aboveheaderText">#21498f</color>
+
+    <color name="header_student">#cdc1c5</color>
+
+    <color name="secure_background">#fffdd0</color>
+    <color name="dsf">#380203</color>
+
+
+</resources>

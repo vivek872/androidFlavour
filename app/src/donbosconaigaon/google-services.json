@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "253457584521",
+    "firebase_url": "https://don-bosco-hs-naigaon.firebaseio.com",
+    "project_id": "don-bosco-hs-naigaon",
+    "storage_bucket": "don-bosco-hs-naigaon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253457584521:android:cbf76fd90c422077",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.donbosconaigaon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253457584521-mj27bh6hp7cb615af2nj1pslum0ql49b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyy5-30gt3uRUDnq0k86MiF5zmASXjI2M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "154498385694",
+    "firebase_url": "https://st-xavier-himmatnagar.firebaseio.com",
+    "project_id": "st-xavier-himmatnagar",
+    "storage_bucket": "st-xavier-himmatnagar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154498385694:android:6b7aa29ca6e4d96e",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.stxaviershimmatnagar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154498385694-89ftt7hfinu7vjen90n26r9l9ubjqkpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTN3KU3Eq-zXmxorUJtXqNT9VA-E0d3l4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

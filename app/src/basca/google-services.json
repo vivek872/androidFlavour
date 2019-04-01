@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1000919029471",
+    "firebase_url": "https://basca-ea9cf.firebaseio.com",
+    "project_id": "basca-ea9cf",
+    "storage_bucket": "basca-ea9cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000919029471:android:b263b0810d07e80e",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.basca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000919029471-9tpt6fshb44g44rj5pdijdmvkra602dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5cMSGJX7kQtafVn21bEihDXmdI0Tf8F0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

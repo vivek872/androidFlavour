@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "638425070886",
+    "firebase_url": "https://st-joseph-khanusa.firebaseio.com",
+    "project_id": "st-joseph-khanusa",
+    "storage_bucket": "st-joseph-khanusa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638425070886:android:eba764f514db2832",
+        "android_client_info": {
+          "package_name": "com.intellinects.intellinectsschool.stjosephkhanusa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638425070886-l25kbe3u0ahuh7ts8tce3h7kadpcndc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPgmHvyGPzkBDuYuZBeBeQSspsyzjXTd4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
