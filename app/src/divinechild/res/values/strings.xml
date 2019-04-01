@@ -17,6 +17,7 @@
     <string name="title">Title</string>
     <string name="date">Date</string>
     <string name="day">Day</string>
+<string name="facilities">FACILITIES</string>
     <string name="downloads">Downloads</string>
     <string name="all_day">All Day</string>
     <string name="news_nda">News</string>

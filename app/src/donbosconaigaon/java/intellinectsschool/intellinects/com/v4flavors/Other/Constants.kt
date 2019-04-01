@@ -216,7 +216,10 @@ object Constants {
 
     val LEARNING_CENTER = "https://moodle.cjmkharghar.org/login/index.php?mob_mobileno=admin&mob_random_key=taraba_cjm&mob_emailid=ranjan@palinfocom.net&mob_password=1234"
     val LMS_URL = "https://ilms.intellinects.net/LMS_PARENT/pages/Subject.php"
- 
+
+
+    val NEWS_URL = "https://donbosconaigaon.org/news/"
+    val EVENT_URL = "https://donbosconaigaon.org/calendar/"
 
 
 

@@ -16,6 +16,7 @@ object Constants {
     val FCM_TOKEN = "fcm_token"
     val SLIDER_IMAGES = "slider_images"
     val SCHOOL_ID = "185"
+    val BOARDID = "3"
     val SCHOOL_ID_ACT = "55"
 
     var APP_NAME = "Holy Family High School App";
@@ -186,5 +187,7 @@ object Constants {
     val ACADEMICS_URL = "https://holyfamilyandheri.org/academics/"
     val ADMISSIONS_URL = "https://holyfamilyandheri.org/admissions/"
 
+    val NEWS_URL = "https://holyfamilyandheri.org/news/"
+    val EVENT_URL = "https://holyfamilyandheri.org/news/calendar/"
 
 }

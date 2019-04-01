@@ -18,7 +18,7 @@ object Constants {
 
      val SCHOOL_ID = 137
      val SCHOOL_ID_ACT = 55
-     val BOARDID="1"
+     val BOARDID="3"
     var APP_NAME = "Our Lady of Health School"
     //APP CONSTANTS
     val NOTIFY_TONE = "NOTIFY_TONE"
@@ -212,6 +212,9 @@ object Constants {
     val ABOUT_US = "https://olhssahar.org/us/"
     val SCHOOL_WEBSITE = "httpss://olhssahar.org/"
     val TEACHERS_URL = "https://olhssahar.org/faculty/"
+
+    val NEWS_URL = "https://olhssahar.org/news/news-from-olhs-campus/"
+    val EVENT_URL = "https://olhssahar.org/news/school-calendar/"
 
  val LEARNING_CENTER = "https://moodle.cjmkharghar.org/login/index.php?mob_mobileno=admin&mob_random_key=taraba_cjm&mob_emailid=ranjan@palinfocom.net&mob_password=1234"
     val LMS_URL = "https://ilms.intellinects.net/LMS_PARENT/pages/Subject.php"

@@ -17,7 +17,7 @@ object Constants {
     val SLIDER_IMAGES = "slider_images"
     val SCHOOL_ID = "5"
     val SCHOOL_ID_ACT = "55"
-    val BOARDID="1"
+    val BOARDID="3"
 
     var APP_NAME = "Mount Carmel High School App";
     //APP CONSTANTS
@@ -175,7 +175,8 @@ object Constants {
     val YOUTUBE_URL_WV: String? = null
     val ROLL_OF_HONOUR = "https://mountcarmelpune.org/academics/roll-of-honour/"
     val TEACHERS_URL = "https://mountcarmelpune.org/academics/faculty-staff/"
-    val ACADEMICS_URL = "https://mountcarmelpune.org/academics/"
-    val ADMISSIONS_URL = "https://mountcarmelpune.org/admissions/"
+
+    val NEWS_URL = "https://mountcarmelpune.org/news/"
+    val EVENT_URL = "https://mountcarmelpune.org/news/calendar/"
 
 }

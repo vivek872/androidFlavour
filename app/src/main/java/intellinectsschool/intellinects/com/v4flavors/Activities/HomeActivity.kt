@@ -121,7 +121,9 @@ class HomeActivity : AppCompatActivity() {
 
     fun LaunchHomeIntent(view: View) {
         val textView = view.findViewById(R.id.home_tv) as TextView
-        val intent: Intent
+      //  val intent: Intent
+        val intent = Intent(this@HomeActivity, WebViewActivity::class.java)
+
 //        bundle = Bundle()
 //        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, textView.text.toString() + "Activity")
 //        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, textView.text.toString() + "Activity")
@@ -134,11 +136,14 @@ class HomeActivity : AppCompatActivity() {
 //        if (NetworkCall.isInternetAvailable(this)) {
             when (textView.text.toString().toLowerCase()) {
                 "news" -> {
-                    intent = Intent(this@HomeActivity, NewsActivity::class.java)
+//                    intent = Intent(this@HomeActivity, NewsActivity::class.java)
+//                    startActivity(intent)
+
+                    intent.putExtra("URL", Constants.NEWS_URL)
                     startActivity(intent)
                 }
                 "events" -> {
-                    intent = Intent(this@HomeActivity, EventsActivity::class.java)
+                    intent.putExtra("URL", Constants.EVENT_URL)
                     startActivity(intent)
                 }
                 "register" -> {

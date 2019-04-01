@@ -17,6 +17,7 @@ object Constants {
     val SLIDER_IMAGES = "slider_images"
     val SCHOOL_ID = "187"
     val SCHOOL_ID_ACT = "55"
+    val BOARDID = "2"
 
     var APP_NAME = "Divine Child CBSE App";
     //APP CONSTANTS
@@ -185,6 +186,9 @@ object Constants {
     val TEACHERS_URL = "https://divinechildcbse.org/faculty-staff/"
     val ACADEMICS_URL = "https://divinechildcbse.org/academics/"
     val ADMISSIONS_URL = "https://divinechildcbse.org/admissions/"
+    val NEWS_URL = "https://divinechildcbse.org/news/"
+    val EVENT_URL = "https://divinechildcbse.org/calendar/"
+
 
 
 }

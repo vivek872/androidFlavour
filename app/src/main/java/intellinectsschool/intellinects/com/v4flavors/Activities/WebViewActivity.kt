@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.KeyEvent
 import android.view.View
 import android.webkit.WebSettings
 import android.webkit.WebView
@@ -21,13 +22,14 @@ class WebViewActivity : AppCompatActivity() {
     internal lateinit  var progress: ProgressDialog
     internal lateinit  var bundle: Bundle
     internal var url: String =""
+    internal lateinit  var webView : WebView
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
 
-        val webView = findViewById<WebView>(R.id.web_view_global)
+         webView = findViewById<WebView>(R.id.web_view_global)
          bundle = intent.extras
         progress = ProgressDialog(this@WebViewActivity)
         progress.setMessage("Loading...")
@@ -66,4 +68,38 @@ class WebViewActivity : AppCompatActivity() {
             }
 
     }
+
+
+    override fun onBackPressed() {
+        if (webView.canGoBack()) {
+            webView.goBack();
+        } else {
+            super.onBackPressed();
+        }
+
+//        val fm = supportFragmentManager
+//        fm.popBackStack()
+    }
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+
+        if (event != null) {
+            if (event.getAction() === KeyEvent.ACTION_DOWN) {
+                when (keyCode) {
+                    KeyEvent.KEYCODE_BACK -> {
+                        if (webView.canGoBack()) {
+                            webView.goBack()
+                        } else {
+                            finish()
+                        }
+                        return true
+                    }
+                }
+
+            }
+        }
+        return super.onKeyDown(keyCode, event)
+    }
+
+
+
 }

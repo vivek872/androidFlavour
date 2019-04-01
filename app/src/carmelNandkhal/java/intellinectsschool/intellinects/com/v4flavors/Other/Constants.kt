@@ -16,6 +16,7 @@ object Constants {
     val FCM_TOKEN = "fcm_token"
     val SLIDER_IMAGES = "slider_images"
     val SCHOOL_ID = "115"
+    val BOARDID = "3"
 
     var APP_NAME = "Carmel Nandkhal";
     //APP CONSTANTS
@@ -177,6 +178,9 @@ object Constants {
     val TEACHERS_URL = "https://carmelconventhighschool.org/faculty-staff/"  //" https://school.intellischools.org/staff/"
     val ROLL_OF_HONOUR="https://carmelconventhighschool.org/academics/roll-honour/"
     val YOUTUBE_EDU_URL = "https://www.youtube.com/watch?v=489o9elu4AA"
+    val NEWS_URL = "https://carmelkalamboli.org/news/news-around-campus/"
+    val EVENT_URL = "https://carmelkalamboli.org/news/school-calendar/"
+
 
 
 

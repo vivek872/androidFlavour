@@ -17,6 +17,7 @@ object Constants {
     val SLIDER_IMAGES = "slider_images"
     val SCHOOL_ID = "125"
     val SCHOOL_ID_ACT = "55"
+    val BOARDID="3"
 
     var APP_NAME = "Cardinal Gracias High School App";
     //APP CONSTANTS
@@ -177,15 +178,11 @@ object Constants {
     val CONTACT_US = "https://cardinalgraciashighschool.org/contact-us/"
     val ABOUT_US = "https://cardinalgraciashighschool.org/about-us/"
     val SCHOOL_WEBSITE = "https://cardinalgraciashighschool.org/"
-    var FAQ_URL = "https://faq.isirs.org/public/"
-    var FACEBOOK_URL = "https://www.facebook.com/CGHSBandraEast/"
-    val YOUTUBE_URL_WV = "https://www.youtube.com/channel/UCJ06e_sI8miOJ8d5VTLAfUA"
     val ROLL_OF_HONOUR = "https://cardinalgraciashighschool.org/academics/roll-of-honour/"
     val TEACHERS_URL = "https://cardinalgraciashighschool.org/faculty/"
-    val ACADEMICS_URL = "https://cardinalgraciashighschool.org/academics/"
-    val ADMISSIONS_URL = "https://cardinalgraciashighschool.org/admissions/"
-    val YOUTUBE_EDU_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ06e_sI8miOJ8d5VTLAfUA&maxResults=50&order=date&key=" + Constants.YOUTUBE_API_KEY
 
+    val NEWS_URL = "https://cardinalgraciashighschool.org/news/events-school/"
+    val EVENT_URL = "https://cardinalgraciashighschool.org/news/school-calendar/"
 
 
 }

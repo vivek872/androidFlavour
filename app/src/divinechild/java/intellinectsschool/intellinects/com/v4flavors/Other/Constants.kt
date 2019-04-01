@@ -20,7 +20,7 @@ object Constants {
     val BOARDID="3"
 
 
-    var APP_NAME = "Divine Child CBSE"
+    var APP_NAME = "Divine Child High School"
     //APP CONSTANTS
     val NOTIFY_TONE = "NOTIFY_TONE"
     val NOTIFY_TONE_URI = "NOTIFY_TONE_URI"
@@ -260,6 +260,8 @@ object Constants {
     val ABOUT_US = "https://divinechildandheri.com/about-us/"
     val SCHOOL_WEBSITE = "https://divinechildandheri.com"
 
+    val NEWS_URL = "https://divinechildandheri.com/news/"
+    val EVENT_URL = "https://divinechildandheri.com/calendar/"
 
 
 

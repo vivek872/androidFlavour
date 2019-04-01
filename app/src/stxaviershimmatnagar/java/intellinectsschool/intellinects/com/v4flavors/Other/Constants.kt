@@ -18,7 +18,7 @@ object Constants {
 
      val SCHOOL_ID = 194
      val SCHOOL_ID_ACT = 55
-     val BOARDID="1"
+     val BOARDID="3"
     var APP_NAME = "St. Xavier's Educational Institute"
     //APP CONSTANTS
     val NOTIFY_TONE = "NOTIFY_TONE"
@@ -221,5 +221,9 @@ object Constants {
 
  val LEARNING_CENTER = "https://moodle.cjmkharghar.org/login/index.php?mob_mobileno=admin&mob_random_key=taraba_cjm&mob_emailid=ranjan@palinfocom.net&mob_password=1234"
     val LMS_URL = "https://ilms.intellinects.net/LMS_PARENT/pages/Subject.php"
- 
+
+    val NEWS_URL = "https://stxaviershimmatnagar.org/news/"
+    val EVENT_URL = "https://stxaviershimmatnagar.org/news/calendar/"
+
+
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <color name="colorPrimary">#58607C</color>
+    <color name="colorPrimaryDark">#58607C</color>
+    <color name="colorAccent">#58607C</color>
+    <color name="app_background_color">#F5F5F5</color>
+    <color name="gray">#E0E0E0</color>
+    <color name="menu_item_color_violet">#452A50</color>
+    <color name="menu_item_color_orange">#DE691B</color>
+    <color name="menu_item_color_red">#DF352F</color>
+    <color name="menu_item_color_blue">#28ACD9</color>
+    <color name="menu_item_color_dark_green">#086314</color>
+    <color name="menu_item_color_purple">#AD1DFF</color>
+    <color name="weekly_off">#0FA0E8</color>
+    <color name="holiday">#2AFF3B</color>
+    <color name="sick_leave">#FFA00F</color>
+    <color name="half_day">#FF07FE</color>
+    <color name="extra_curricular">#03663F</color>
+    <color name="other">#FFFB0F</color>
+    <color name="absent">#E85606</color>
+    <color name="present">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="no_record">#DCDCDC</color>
+
+</resources>

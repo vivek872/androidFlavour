@@ -17,7 +17,7 @@ object Constants {
     val SLIDER_IMAGES = "slider_images"
     val SCHOOL_ID = "134"
     val SCHOOL_ID_ACT = "55"
-
+    val BOARDID="3"
     var APP_NAME = "Canossa High School,Mahim App";
     //APP CONSTANTS
     val NOTIFY_TONE = "NOTIFY_TONE"
@@ -186,21 +186,17 @@ object Constants {
     const val BASEURL = "https://intellischoolnew.test.intellischools.org/"
     const val MASTER_API_URL = "https://apps.intellinects.com/masterapi/public/api/"
 
-    val TERMS_URL = "https://canossamahim.org/terms-of-app-use-privacy-policy/"
+
     val MORE_NEWS_URL = "https://canossamahim.org/news/"
-    val SCHOOL_DOMAIN = "https://canossamahim.org/"
     val FACILITIES_URL = "https://canossamahim.org/facilities/"
     val PRINCIPALS_MESSAGE = "https://canossamahim.org/about-us/message/"
     val CONTACT_US = "https://canossamahim.org/contact-us/"
     val ABOUT_US = "https://canossamahim.org/about-us/"
     val SCHOOL_WEBSITE = "https://canossamahim.org/"
-    var FAQ_URL = "https://faq.isirs.org/public/"
-    var FACEBOOK_URL: String? = null
-    val YOUTUBE_URL_WV: String? = null
     val ROLL_OF_HONOUR = "https://canossamahim.org/academics/roll-of-honour/"
     val TEACHERS_URL = "https://canossamahim.org/faculty/"
-    val ACADEMICS_URL = "https://canossamahim.org/academics/"
-    val ADMISSIONS_URL = "https://canossamahim.org/admissions/"
+    val NEWS_URL = "https://canossamahim.org/news/"
+    val EVENT_URL = "https://canossamahim.org/news/school-calendar/"
 
 
 }

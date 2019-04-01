@@ -18,7 +18,7 @@ object Constants {
 
      val SCHOOL_ID = 121
      val SCHOOL_ID_ACT = 55
- val BOARDID="1"
+ val BOARDID="3"
 
 
     var APP_NAME = "St. Joseph's High School"
@@ -221,6 +221,11 @@ object Constants {
     val TEACHERS_URL = "https://sjskhanusa.org/faculty/"
  val LEARNING_CENTER = "https://moodle.cjmkharghar.org/login/index.php?mob_mobileno=admin&mob_random_key=taraba_cjm&mob_emailid=ranjan@palinfocom.net&mob_password=1234"
     val LMS_URL = "https://ilms.intellinects.net/LMS_PARENT/pages/Subject.php"
- 
+
+   val NEWS_URL = "https://sjskhanusa.org/news/"
+   val EVENT_URL = "https://sjskhanusa.org/news/school-calendar/"
+
+
+
 
 }

@@ -17,7 +17,7 @@ object Constants {
     val SLIDER_IMAGES = "slider_images"
     val SCHOOL_ID = "130"
     val SCHOOL_ID_ACT = "55"
-    val BOARDID="2"
+    val BOARDID="3"
 
     var APP_NAME = "Mary Immaculate Borivli App";
     //APP CONSTANTS
@@ -188,5 +188,8 @@ object Constants {
     val ACADEMICS_URL = "https://maryimmaculateprimaryborivli.org/academics/"
     val ADMISSIONS_URL = "https://maryimmaculateprimaryborivli.org/admissions/"
     val YOUTUBE_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC-bx0DiOmpDfZ2bnXumTF4A&maxResults=50&order=date&key=\"" + Constants.YOUTUBE_API_KEY
+
+    val NEWS_URL = "https://maryimmaculateprimaryborivli.org/news-events/"
+    val EVENT_URL = "https://maryimmaculateprimaryborivli.org/news-events/"
 
 }

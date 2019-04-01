@@ -17,6 +17,7 @@ object Constants {
     val SLIDER_IMAGES = "slider_images"
     val SCHOOL_ID = "146"
     val SCHOOL_ID_ACT = "55"
+    val BOARDID = "3"
 
     var APP_NAME = "Holy Name High School App";
     //APP CONSTANTS
@@ -192,8 +193,9 @@ object Constants {
     val YOUTUBE_URL_WV: String? = null
     val ROLL_OF_HONOUR = "https://holynamehighschool.org/academics/roll-honour/"
     val TEACHERS_URL = "https://holynamehighschool.org/faculty/"
-    val ACADEMICS_URL = "https://holynamehighschool.org/academics/"
-    val ADMISSIONS_URL = "https://holynamehighschool.org/admissions/"
+    val NEWS_URL = "https://holynamehighschool.org/news/news-around-campus/"
+    val EVENT_URL = "https://holynamehighschool.org/news/calendar/"
+
 
 
 }
