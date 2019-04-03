@@ -23,6 +23,8 @@ import intellinectsschool.intellinects.com.v4flavors.Other.Constants
 import intellinectsschool.intellinects.com.v4flavors.Other.CustomAlert
 import intellinectsschool.intellinects.com.v4flavors.R
 import java.util.ArrayList
+import java.net.URLEncoder
+
 
 class HomeActivity : AppCompatActivity() {
 
@@ -101,6 +103,11 @@ class HomeActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 "lms" -> {
+//                    val buffer = StringBuffer(Constants.LMS_URL) //("http://stage.realtylog.net/iPhone/functions.php")
+//                    buffer.append("/" + URLEncoder.encode("SSCMaharashtraBoard"))
+//                    buffer.append("/" + URLEncoder.encode("DIVINE"))
+//                    buffer.append("act=" + URLEncoder.encode("readFileAndPrint"))
+//                    webView.loadUrl(buffer.toString())
                     intent.putExtra("URL", Constants.LMS_URL)
                     startActivity(intent)
                 }
@@ -176,12 +183,12 @@ class HomeActivity : AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
         navArray = ArrayList()
 
-        layout_learning = findViewById<View>(R.id.layout_learning) as LinearLayout
-        if(Constants.BOARDID.equals("1")){
-            layout_learning.visibility = View.VISIBLE
-        }else{
-            layout_learning.visibility = View.INVISIBLE
-        }
+//        layout_learning = findViewById<View>(R.id.layout_learning) as LinearLayout
+//        if(Constants.BOARDID.equals("1")){
+//            layout_learning.visibility = View.VISIBLE
+//        }else{
+//            layout_learning.visibility = View.INVISIBLE
+//        }
 
 //       val prefs = this@HomeActivity.getSharedPreferences(Constants.APP_NAME, Context.MODE_PRIVATE)
 //        val size = prefs.getInt("navItemsPostLogin_size", 0)
@@ -221,9 +228,7 @@ class HomeActivity : AppCompatActivity() {
         //Nav bar
         iv_logout = findViewById(R.id.logout) as ImageView
         iv_logout.setImageDrawable(Constants.LOGOUT_BUTTON)
+        iv_logout.setVisibility(View.GONE)
 
-//        if (!prefs.getBoolean("loggedInFlag", false)) {
-//            iv_logout.setVisibility(View.GONE)
-//        }
     }
 }
