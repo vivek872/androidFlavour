@@ -1,8 +1,11 @@
 package intellinectsschool.intellinects.com.v4flavors.Activities
 
+import android.app.Activity
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.view.GravityCompat
 import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
@@ -65,14 +68,7 @@ class HomeActivity : AppCompatActivity() {
 
         Log.d("CHAMPP",textView.text.toString().toLowerCase())
 
-//        bundle = Bundle()
-//        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, textView.text.toString() + "Activity")
-//        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, textView.text.toString() + "Activity")
-//        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, textView.text.toString() + "Activity")
-//        analytics.logEvent(textView.text.toString() + "Activity", bundle)
-//        analytics.setAnalyticsCollectionEnabled(true)
-//        analytics.setMinimumSessionDuration(2000)
-//        analytics.setSessionTimeoutDuration(300000)
+
 
         if (NetworkCall.isInternetAvailable(this)) {
 
@@ -125,22 +121,14 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-
     fun LaunchHomeIntent(view: View) {
         val textView = view.findViewById(R.id.home_tv) as TextView
       //  val intent: Intent
         val intent = Intent(this@HomeActivity, WebViewActivity::class.java)
 
-//        bundle = Bundle()
-//        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, textView.text.toString() + "Activity")
-//        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, textView.text.toString() + "Activity")
-//        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, textView.text.toString() + "Activity")
-//        analytics.logEvent(textView.text.toString() + "Activity", bundle)
-//        analytics.setAnalyticsCollectionEnabled(true)
-//        analytics.setMinimumSessionDuration(2000)
-//        analytics.setSessionTimeoutDuration(300000)
 
-//        if (NetworkCall.isInternetAvailable(this)) {
+
+      if (NetworkCall.isInternetAvailable(this)) {
             when (textView.text.toString().toLowerCase()) {
                 "news" -> {
 //                    intent = Intent(this@HomeActivity, NewsActivity::class.java)
@@ -157,15 +145,14 @@ class HomeActivity : AppCompatActivity() {
 
                     CustomAlert.show(this@HomeActivity, "Registration Disable at the moment")
 
-
                 }
 
             }
-//        }
-//        else
-//        {
-//            CustomAlert.show(this,"No internet connection")
-//        }
+        }
+        else
+        {
+            CustomAlert.show(this,"No internet connection")
+        }
     }
 
 
@@ -231,4 +218,44 @@ class HomeActivity : AppCompatActivity() {
         iv_logout.setVisibility(View.GONE)
 
     }
+
+
+    fun exit_alert(activity: Activity) {
+
+
+
+        val builder = AlertDialog.Builder(activity)
+// Finally, make the alert dialog using builder
+
+        // Set the alert dialog title
+        builder.setTitle("Alert")
+
+        // Display a message on alert dialog
+        builder.setMessage("Do You Want to Exit??")
+
+        // Set a positive button and its click listener on alert dialog
+        builder.setPositiveButton("YES") { dialogs, which ->
+            // Do something when user press the positive button
+            dialogs.dismiss()
+            activity.finish()
+
+        }
+
+        // Display a neutral button on alert dialog
+        builder.setNeutralButton("Cancel"){dialogs,_ ->
+            dialogs.dismiss()
+        }
+
+        val dialogalert: AlertDialog = builder.create()
+        // Display the alert dialog on app interface
+        dialogalert.show()
+    }
+
+
+    override fun onBackPressed() {
+
+       exit_alert(this)
+    }
+
+
 }
