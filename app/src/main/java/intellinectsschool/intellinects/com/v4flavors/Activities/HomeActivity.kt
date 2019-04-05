@@ -19,7 +19,6 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import intellinectsschool.intellinects.com.v4flavors.Adapter.NavAdapter
 
-
 import intellinectsschool.intellinects.com.v4flavors.Models.NavItems
 import intellinectsschool.intellinects.com.v4flavors.Network.NetworkCall
 import intellinectsschool.intellinects.com.v4flavors.Other.Constants
@@ -30,6 +29,8 @@ import java.net.URLEncoder
 
 
 class HomeActivity : AppCompatActivity() {
+
+    /*******************VARIABLE DECLARATION ***********************/
 
     internal lateinit  var recyclerView: RecyclerView
     internal lateinit  var layoutManager: RecyclerView.LayoutManager
@@ -51,15 +52,25 @@ class HomeActivity : AppCompatActivity() {
     internal lateinit  var final_view:LinearLayout
     internal lateinit  var layout_learning:LinearLayout
 
+
+   /*******************VARIABLE DECLARATION END***********************/
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        InitialiseHome()
+       /*******************METHOD FOR INITIALIZING ALL ELEMENTS ***********************/
 
+           InitialiseHome()
+
+       /*******************END OF METHOD FOR INITIALIZING ALL ELEMENTS ***********************/
 
     }
 
+
+
+ /*******************METHOD FOR LUNCHING WEB VIEWS***********************/
 
     fun LaunchWebView(view: View) {
 
@@ -121,6 +132,14 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
+
+ /*******************END OF METHOD FOR LUNCHING WEB VIEWS***********************/
+
+
+
+
+ /*******************COMMON METHOD FOR CALL ALL LINKS USING INTENT***********************/
+
     fun LaunchHomeIntent(view: View) {
         val textView = view.findViewById(R.id.home_tv) as TextView
       //  val intent: Intent
@@ -155,6 +174,11 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
+    /*******************END OF METHOD COMMON METHOD FOR CALL ALL LINKS USING INTENT***********************/
+
+
+
+ /*******************METHOD FOR INITIALIZING ALL ELEMENT ***********************/
 
     private fun InitialiseHome() {
         //ToolBar and NavDrawer
@@ -169,24 +193,6 @@ class HomeActivity : AppCompatActivity() {
         layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
         navArray = ArrayList()
-
-//        layout_learning = findViewById<View>(R.id.layout_learning) as LinearLayout
-//        if(Constants.BOARDID.equals("1")){
-//            layout_learning.visibility = View.VISIBLE
-//        }else{
-//            layout_learning.visibility = View.INVISIBLE
-//        }
-
-//       val prefs = this@HomeActivity.getSharedPreferences(Constants.APP_NAME, Context.MODE_PRIVATE)
-//        val size = prefs.getInt("navItemsPostLogin_size", 0)
-//        val array = arrayOfNulls<String>(size)
-//        val iconArray = IntArray(size)
-//        for (i in 0 until size) {
-//            //Log.e("navItemsPostLogin_size", prefs.getString("navItemsPostLogin_" + i, null) + " ");
-//            array[i] = prefs.getString("navItemsPostLogin_$i", null)
-//            iconArray[i] = prefs.getInt("navIconPostLogin_$i", 0)
-//        }
-
 
         navAdapter = NavAdapter(navArray, this, drawerLayout, drawerCheck)
         recyclerView.adapter = navAdapter
@@ -220,12 +226,16 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
+   /*******************END OF METHOD FOR INITIALIZING ALL ELEMENT ***********************/
+
+
+
+/*******************EXIT METHOD *************************************/
+
     fun exit_alert(activity: Activity) {
 
-
-
         val builder = AlertDialog.Builder(activity)
-// Finally, make the alert dialog using builder
+       // Finally, make the alert dialog using builder
 
         // Set the alert dialog title
         builder.setTitle("Alert")
@@ -251,11 +261,19 @@ class HomeActivity : AppCompatActivity() {
         dialogalert.show()
     }
 
+/*******************END OF EXIT METHOD *************************************/
+
+
+
+
+/*******************BACKPRESS METHOD *************************************/
+
 
     override fun onBackPressed() {
 
        exit_alert(this)
     }
 
+/*******************END OF BACK PRESS METHOD *************************************/
 
 }

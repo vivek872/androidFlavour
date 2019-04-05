@@ -25,6 +25,9 @@ import java.util.Locale;
 
 public class EventDetailsActivity extends AppCompatActivity {
 
+
+    /*******************VARIABLE DECLARATION ***********************/
+
     TextView tv_month, tv_date, tv_title, tv_time, tv_contact_name, tv_contact_number, tv_venue, tv_event_description;
     String month, date, title, start_time, end_time, contact_name, contact_number, venue, event_description,i;
     ImageView iv_1, iv_2, iv_3, iv_4, iv_5, iv_6,imageViewBack;
@@ -32,15 +35,31 @@ public class EventDetailsActivity extends AppCompatActivity {
     int weekday;
     LinearLayout layout_venue, layout_contact_name, layout_contact_number, layout_description, layout_title;
 
+
+    /*******************VARIABLE DECLARATION END***********************/
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_details);
+
+     /*******************INITIALIZATION OF ELEMENT ***********************/
+
         TextView tv_header_text = findViewById(R.id.header_text);
         tv_header_text.setText(R.string.event_details);
         DrawablePainter painter = new DrawablePainter(this);
         painter.paintDrawables();
         initDetails();
+
+
+    /*******************INITIALIZATION OF ELEMENT END***********************/
+
+
+
+
+     /*******************BACK BUTTON CLICK EVENT ***********************/
 
         imageViewBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +67,10 @@ public class EventDetailsActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+    /*******************BACK BUTTON CLICK EVENT END***********************/
+
+
 
         getEventDetails();
     }

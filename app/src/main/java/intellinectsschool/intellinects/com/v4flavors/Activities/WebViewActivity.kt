@@ -19,18 +19,26 @@ import org.json.JSONObject
 
 class WebViewActivity : AppCompatActivity() {
 
+    /***********VARIABLE DECLARATION****************/
+
     internal lateinit  var progress: ProgressDialog
     internal lateinit  var bundle: Bundle
     internal var url: String =""
     internal lateinit  var webView : WebView
+
+    /***********END OF VARIABLE DECLARATION****************/
+
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
 
-         webView = findViewById<WebView>(R.id.web_view_global)
-         bundle = intent.extras
+
+   /******INITIALIZING ELEMENT****************/
+
+        webView = findViewById<WebView>(R.id.web_view_global)
+        bundle = intent.extras
         progress = ProgressDialog(this@WebViewActivity)
         progress.setMessage("Loading...")
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER)
@@ -70,6 +78,8 @@ class WebViewActivity : AppCompatActivity() {
     }
 
 
+  /******BACK PRESS METHOD****************/
+
     override fun onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack();
@@ -80,6 +90,9 @@ class WebViewActivity : AppCompatActivity() {
 //        val fm = supportFragmentManager
 //        fm.popBackStack()
     }
+
+ /******BACK PRESS METHOD****************/
+
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
 
         if (event != null) {

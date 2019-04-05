@@ -36,6 +36,7 @@ import java.util.*
 
 class NewsActivity : AppCompatActivity(),SwipeRefreshLayout.OnRefreshListener {
 
+  /*********** VARIABLE DECLARATION****************/
 
     private lateinit var layoutManager: RecyclerView.LayoutManager
     private lateinit var arrayList: ArrayList<News>
@@ -44,19 +45,27 @@ class NewsActivity : AppCompatActivity(),SwipeRefreshLayout.OnRefreshListener {
     private lateinit var iv_nda: ImageView
     val TAG="NewsActivity";
 
+  /***********END VARIABLE DECLARATION****************/
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
 
+
+      /*********** BACK BUTTON CLICK EVENT ****************/
         iv_back.setOnClickListener {
             finish();
         }
+
+
         arrayList=ArrayList()
         header_text.setText(R.string.news)
         header_text.visibility = View.VISIBLE
+
         //Populate News
         layoutManager = LinearLayoutManager(this) as RecyclerView.LayoutManager
         //Swipe Refresh
+
         news_swipe_layout.setColorSchemeColors(ResourcesCompat.getColor(resources, R.color.colorPrimaryDark, null))
         nda_image.setImageDrawable(Constants.NDA_IMAGE)
         news_swipe_layout.setOnRefreshListener(this)
@@ -64,6 +73,9 @@ class NewsActivity : AppCompatActivity(),SwipeRefreshLayout.OnRefreshListener {
             val params = HashMap<String, String>()
 //            params["SCHOOL_ID"] = Constants.SCHOOL_CODE_NEWS_EVENTS
 //            CustomProgress.showProgress(this)
+
+
+      /*********** CHEKING FOR INTERNET AVAILABLE OR NOT****************/
 
         if(NetworkCall.isInternetAvailable(this))
         {
@@ -92,8 +104,12 @@ class NewsActivity : AppCompatActivity(),SwipeRefreshLayout.OnRefreshListener {
 
     }
 
-    //This function is for getting news online when there is internet connection
+    /*********** CHEKING FOR INTERNET AVAILABLE OR NOT****************/
 
+
+
+
+    /*****Function IS FOR GETTING NEWS WHEN INTERNET CONNECTION IS ON*********/
 
     private fun getNewsOnline(response: String) {
         try {
@@ -149,7 +165,14 @@ class NewsActivity : AppCompatActivity(),SwipeRefreshLayout.OnRefreshListener {
             e.printStackTrace()
         }
     }
-    //This function is for getting news offline when there is no internet connection
+
+
+
+    /*****Function IS FOR GETTING NEWS WHEN INTERNET CONNECTION IS ON*********/
+
+
+    /*****Function IS FOR GETTING NEWS WHEN INTERNET CONNECTION IS OFF*********/
+
     private fun getOfflineNews() {
         val newsDataSource = NewsDataSource()
         newsDataSource.open(this)
@@ -176,6 +199,10 @@ class NewsActivity : AppCompatActivity(),SwipeRefreshLayout.OnRefreshListener {
             nda_layout.visibility = View.VISIBLE
         }
     }
+
+
+    /*****END OF FUNCTION FOR GETTING NEWS WHEN INTERNET CONNECTION IS OFF *********/
+
 
     fun BackToPrevious(view: View) {
         onBackPressed()
